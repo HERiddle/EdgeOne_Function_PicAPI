@@ -32,8 +32,8 @@ async function handleRequest(request) {
     var url = new URL(request.url);
     var imgType = url.searchParams.get('img');
     
-    const maxHorizontalImageNumber = 882;
-    const maxVerticalImageNumber = 3289;
+    const maxHorizontalImageNumber = 3; //横屏图片数量
+    const maxVerticalImageNumber = 3;  //竖屏图片数量
 
     if (imgType === 'h') {
       // 生成1到maxHorizontalImageNumber之间的随机数
